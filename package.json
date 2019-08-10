@@ -1,0 +1,19 @@
+{
+  "name": "gyration_crustacean_datelib",
+  "version": "1.0.0",
+  "description": "a wrapper of the date class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrakeVorndran/date_lib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrakeVorndran/date_lib/issues"
+  },
+  "homepage": "https://github.com/DrakeVorndran/date_lib#readme"
+}
