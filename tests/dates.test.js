@@ -30,6 +30,8 @@ test("Testing .when()", () => {
 
   let d = new D(2019, 0, 2, 3, 4, 5)
   expect(d.when(curr)).toBe('6 months ago')
+  d = new D(2019, 5, 2, 3, 4, 5)
+  expect(d.when(curr)).toBe('1 month ago')
   d = new D(2019, 9, 2, 3, 4, 5)
   expect(d.when(curr)).toBe('3 months from now')
   d = new D(2024, 9, 2, 3, 4, 5)

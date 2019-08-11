@@ -29,8 +29,7 @@ class D {
     return this.date.getMilliseconds()
   }
 
-  format(form) {
-    form = form ? form : 'Y M D'
+  format(form='Y M D') {
     const swaps = {
       'Y': this.year,
       'y': String(this.year).slice(2, 4),
@@ -49,16 +48,15 @@ class D {
 
   }
 
-  when(curr) {
-    curr = curr? curr : new D()
+  when(curr=new D) {
     const l = ['mili', 'second', 'minute', 'hour', 'day', 'monthNum', 'year']
     return l.reduce((acc, unit) => {
       const printUnit = unit =='monthNum'? 'month' : unit
       if (this[unit] < curr[unit]) {
-        return `${curr[unit] - this[unit]} ${printUnit}s ago`
+        return `${curr[unit] - this[unit]} ${printUnit}${curr[unit] - this[unit]===1? "" : "s"} ago`
       }
       else if (this[unit] > curr[unit]) {
-        return `${this[unit] - curr[unit]} ${printUnit}s from now`
+        return `${this[unit] - curr[unit]} ${printUnit}${curr[unit] - this[unit]===1? "" : "s"} from now`
       }
       return acc
     }, 'now')
