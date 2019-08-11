@@ -1,10 +1,11 @@
 {
   "name": "gyration_crustacean_datelib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a wrapper of the date class",
   "main": "umd/jus-in-case.js",
   "module": "esm/index.js",
   "scripts": {
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest",
     "prepare": "rollup --config"
   },
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/DrakeVorndran/date_lib#readme",
   "devDependencies": {
+    "coveralls": "^3.0.6",
     "jest": "^24.8.0",
     "rollup": "^1.19.4",
     "rollup-plugin-terser": "^5.1.1"
