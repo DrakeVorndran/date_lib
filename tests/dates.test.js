@@ -1,12 +1,13 @@
+/* eslint-disable no-undef */
 const D = require('../src/index')
 
 test("Testing date creation", () => {
-  myDate = new D('1/1/2000')
+  const myDate = new D('1/1/2000')
   expect(String(myDate.date)).toBe(String(new Date('1/1/2000')))
 })
 
 test("Testing time getters", () => {
-  myDate = new D(2000, 1, 1, 0, 0, 0)
+  const myDate = new D(2000, 1, 1, 0, 0, 0)
   expect(myDate.year).toBe(2000)
   expect(myDate.month).toBe("February")
   expect(myDate.monthNum).toBe(1)

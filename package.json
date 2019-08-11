@@ -25,6 +25,7 @@
   "homepage": "https://github.com/DrakeVorndran/date_lib#readme",
   "devDependencies": {
     "coveralls": "^3.0.6",
+    "eslint": "^6.1.0",
     "jest": "^24.8.0",
     "rollup": "^1.19.4",
     "rollup-plugin-terser": "^5.1.1"

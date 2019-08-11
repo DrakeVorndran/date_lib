@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class D {
   constructor(...args) {
     this.date = new Date(...args)
