@@ -1,11 +1,17 @@
 {
   "name": "gyration_crustacean_datelib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a wrapper of the date class",
-  "main": "index.js",
+  "main": "umd/jus-in-case.js",
+  "module": "esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "prepare": "rollup --config"
   },
+  "files": [
+    "esm/*",
+    "emd/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrakeVorndran/date_lib.git"
@@ -17,6 +23,8 @@
   },
   "homepage": "https://github.com/DrakeVorndran/date_lib#readme",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "rollup": "^1.19.4",
+    "rollup-plugin-terser": "^5.1.1"
   }
 }

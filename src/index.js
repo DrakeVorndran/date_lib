@@ -56,7 +56,7 @@ class D {
         return `${curr[unit] - this[unit]} ${printUnit}${curr[unit] - this[unit]===1? "" : "s"} ago`
       }
       else if (this[unit] > curr[unit]) {
-        return `${this[unit] - curr[unit]} ${printUnit}${curr[unit] - this[unit]===1? "" : "s"} from now`
+        return `${this[unit] - curr[unit]} ${printUnit}${this[unit] - curr[unit]===1? "" : "s"} from now`
       }
       return acc
     }, 'now')
